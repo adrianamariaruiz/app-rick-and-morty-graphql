@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(75, 75, 75);
+    color: rgb(255, 255, 255);
+}
+
+.principal__container--title{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.principal__container--buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.principal__container--buttons button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 4px rgb(131, 131, 131);
+    font-weight: bold;
+    font-size: 18px;
+    border-style: none;
+    margin: 20px;
+    height: 40px;
+    width: 120px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.principal__container--buttons button:hover{
+    background-color: rgb(199, 199, 199);
+}
+
+.characters__container--cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.character__container--card{
+    padding: 15px;
+    background-color: rgb(248, 245, 245);
+    color: rgb(44, 44, 44);
+    box-shadow: 4px 4px 6px rgb(131, 131, 131);
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.character__container--info{
+    text-align: center;
+}
+
+.character__container--info :first-child{
+    font-size: 24px;
+}
+
+/* SPINNER */
+.charging{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    border: 5px solid #E6F5FF;
+    border-top: 5px solid #A13333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    z-index: 999;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
