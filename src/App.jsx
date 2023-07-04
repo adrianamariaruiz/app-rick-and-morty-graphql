@@ -6,8 +6,6 @@ const CharactersQuery = gql`
   query Character($page: Int){
     characters(page: $page){
       info{
-        count
-        pages
         next
         prev
       }
@@ -15,14 +13,7 @@ const CharactersQuery = gql`
         id
         name
         species
-        type
         image
-      }
-      resultsEpisodes: results{
-        episode{
-          id
-          name
-        }
       }
     }
   } 
